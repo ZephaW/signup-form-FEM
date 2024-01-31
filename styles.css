@@ -109,20 +109,33 @@ span {
     .container{
         display: flex;
         flex-direction: row;
-        margin-left:9em ;
-        margin-right: 9em;
+        margin:0 9em ;
+        
+        
+    }
+
+    h2 {
+        font-size: 3em;
+
     }
 
     .intro {
         display: flex;
         flex-direction: column;
-       width: 50%;
+     
         justify-content: center;
-        gap: 1em;
-        padding: 1em;
-        margin: 1em;
+        
+        /* padding: 1em;
+        margin: 1em; */
+        width: 50%;
         text-align: left;
     }
+
+.terms {
+    
+    width: 50%;
+    
+}
 
     button.first-button {
         height: 4em;
