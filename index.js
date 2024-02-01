@@ -13,8 +13,12 @@ form.addEventListener('submit', (e) => {
         messages.push('Last Name cannot be empty');
     }
     if (email.value === '') {
-        messages.push('Looks like this not not an Email');
+        messages.push('Email cannot be empty');
+
+    } else if (!isValidEmail(email.value)) {
+        messages.push('Looks like this is not an email');
     }
+    
     if (password.value === '') {
         messages.push('Password cannot be empty');
     }
@@ -25,3 +29,9 @@ form.addEventListener('submit', (e) => {
         alert(messages.join('\n'));
     }
 });
+
+function isValidEmail(email) {
+    // Regular expression to validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
