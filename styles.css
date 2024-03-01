@@ -44,16 +44,17 @@ button.first-button {
 
 
 
-.first-container {
+header {
     color:hsl(0, 100%, 74%);
     font-weight: 700;
 }
 
-.first-container p {
+header p {
     
     margin-top: 1.5em;
     margin-bottom: 3em;
     text-align: center;
+    font-weight: 400;
 }
 
 
@@ -150,7 +151,7 @@ justify-content: center;
         margin-bottom: 0;
     }
 
-    .first-container {
+    header {
         display: flex;
         flex-direction: column;
         
@@ -161,7 +162,7 @@ justify-content: center;
         text-align: left;
     }
 
-    .first-container p {
+    header p {
         line-height: 1.5;
     }
 
