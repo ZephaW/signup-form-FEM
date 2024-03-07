@@ -100,8 +100,29 @@ form {
         box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.6);
 }
 
+.error {
+    color: red;
+    text-align: right;
+    font-size: 0.7rem;
+    display: none;
+  }
+
+  .error-icon {
+    position: absolute;
+    width: 1.2rem;
+    right: 0;
+    transform: translate(-20px, 10px);
+    display: none;
+  }
 
 
+#fNameErrorIcon {
+    display: none;
+}
+
+.fName.error-border{
+    border-color: red;
+}
 
 
 input {
@@ -123,7 +144,7 @@ input::placeholder {
      font-weight: 600;
 }
    
-.second-button {
+#submit-button {
     background-color: hsl(154, 59%, 51%);
     color:  hsl(0, 0%, 100%);
     height: 4em;
